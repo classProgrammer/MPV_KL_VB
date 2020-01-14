@@ -1,14 +1,14 @@
 ## Questions Kugelschreiber
 - Why is shared memory divided into banks?
   - To increase performance of vector systems
-  - ![](multbanks.png)
+  - ![](multbanks.PNG)
   - Vectorsysteme können den Geschwindigkeitsnachteil durch das verwenden von mehreren memory banks wett machen
   - Geschwindigkeitsnachteil weil CPU Systeme auf der CPU auch Memory (Caches) haben und nicht immer in den Hauptspeicher schreiben müssen
 - Cache and Cache Coherence
-  - ![](./cache.png)
+  - ![](./cache.PNG)
   - Vector schneller als liste durch caching
 - How does the GPU hide Memory Latencies
-  - ![](./workinflight.png)
+  - ![](./workinflight.PNG)
 - Bus Snooping
   - Cache controller snoops the bus to idnetify write operations on shared variables to keep the cache up-to-date
   - Cache
@@ -21,7 +21,7 @@
     - All threads in a block are executed on a SM (Streaming Multiprocessor)
   - Warp => Threads are executed in groups e.g. of 32 Threads, that's called a Warp
 - Moores Law
-  - ![](moore.png)
+  - ![](moore.PNG)
   - alle 1.5-2 Jahre verdoppelt sich die Komplexität von integrierten Schaltkreisen
 - SIMD
   - GPGPU
@@ -41,8 +41,8 @@
 
 
 - How to proper use __syncthreads when copying from the shared into the global memory into kernel
-  - ![](synct.png)
-  - ![](synct2.png)
+  - ![](synct.PNG)
+  - ![](synct2.PNG)
 - Chache Coherence
   - Coherent = all shared variable values in all caches are the same
     - Done by e.g. Bus Snooping
@@ -51,7 +51,7 @@
     - The error is detected and corrected with the next read operation
 
 - What undefined behaviour can occur in the kernel at an improper use of __syncthreads?
-  - ![](synct.png)
+  - ![](synct.PNG)
   - Avoid the use of __syncthreads inside divergent code.
   - Barrier jumps in divergent codes
   - Some threads might jump over the __syncthreads barrier

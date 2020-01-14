@@ -12,18 +12,18 @@
 - Fine Grained SIMD Architecture
 
 ## CPU VS GPU
-![](cpuvsgpu.png)
+![](cpuvsgpu.PNG)
 
 ## Nvidia SM Architecture
-![](smarch.png)
+![](smarch.PNG)
 
 ## CUDA Memory Architecture
-![](cmem.png)
+![](cmem.PNG)
 
 ## Storage of Values
-![](store1.png)
-![](store2.png)
-![](bsmem.png)
+![](store1.PNG)
+![](store2.PNG)
+![](bsmem.PNG)
 
 ## Tuning Tipps
-![](tuning.png)
+![](tuning.PNG)

@@ -10,7 +10,7 @@
 - Amdahl => Problem schneller lösen
 - Gustafson => größeres Problem in gleicher Zeit lösen
 ## Taxonomy
-![](flynn.png)
+![](flynn.PNG)
 - of Parallel Systems
   - Speicherart
   - Kommunikationsart
@@ -36,16 +36,16 @@
 - Speedup = Vorher / Nachher = T1 / Tn
   - Es wird nur der Parallele Anteil schneller
   - Linear, Superlinear, Sublinear
-  - ![](speedup.png)
+  - ![](speedup.PNG)
 - Amdahls Law: 
-  - ![](amdahl.png)
+  - ![](amdahl.PNG)
   - Es bringt nur begrenzt etwas immmer mehr Prozessoren zu verwenden => nur der parallele Anteil wird schneller
   - Das Programm sollte möglichst nur aus parallelen Teilen bestehen
   - Selten möchte man ein
 Problem einer bestimmten Größe durch immer höheren Ressourcenaufwand auch immer schneller berechnen können
 
 - Gustafsons Law = 1 + P*(N-1)
-  - ![](gustaf.png)
+  - ![](gustaf.PNG)
   - Anstatt das Programm schneller zu machen kann man ein größeres Problem in der Gleichen Zeit rechnen
   - Skaliert ~Linear
   - Beispiel Straßenbau => Mehr Arbeiter = Paralleles Arbeiten an mehreren Teilabschnitten und nicht einen Teilabschnitt möglichst schnell fertigstellen
@@ -54,7 +54,7 @@ Problem einer bestimmten Größe durch immer höheren Ressourcenaufwand auch imm
   - Superlinear z.B. durch caching Effekte
   - gibt an, wie gut Prozessoren bei der Berechnung einer Aufgabe ausgelastet sind
 - Scaling
-  - ![](scale.png)
+  - ![](scale.PNG)
   - Unter Skalierbarkeit versteht man die Fähigkeit eines parallelen Systems, seine Leistungsfähigkeit proportional mit der Zahl neu hinzugefügter Recheneinheiten zu steigern.
   - Dabei zu beachten
     - Datentransfer CPU <-> Speicher
@@ -65,7 +65,7 @@ Problem einer bestimmten Größe durch immer höheren Ressourcenaufwand auch imm
 ## Wan Welches Gesetz verwenden?
 - Amdahl => Fixe Problemgröße => Das Problem schneller lösen
 - Gustafson => größeres Problem in der gleichen Zeit (Straßenbau) oder detailierter lösen (Wettervorhersage)
-![](./speed.png)
+![](./speed.PNG)
 
 # Intro 2
 ## Why Parallel Computing
@@ -79,7 +79,7 @@ Problem einer bestimmten Größe durch immer höheren Ressourcenaufwand auch imm
 - The Free Lunch is over
   - automatic Speedup through next hardware generation is no longer given => you get more cores not faster CPUs 
 - Grand Challenge Problems
-  - ![](challenge.png)
+  - ![](challenge.PNG)
 - flop/s
   - Floating Point Operations per Second
   - measurement of computer performance
@@ -88,7 +88,7 @@ Problem einer bestimmten Größe durch immer höheren Ressourcenaufwand auch imm
 irregular data structures.
   - Pipelineing and vectorization do not scale well. The upper limit on
 their speed will be some small multiple of the speed of the CPU.
-  - ![](pipe.png)
+  - ![](pipe.PNG)
 - The Need for more Power
   - More power to solve bigger problems or problems in more detail ... to drive science forward
 - NUMA System
@@ -100,7 +100,7 @@ their speed will be some small multiple of the speed of the CPU.
   - Solution: Write Through => The cache controllers Bus Snooping leads to updateing the value in the cache since now the write is visible to all cache controllers and they update their values 
 - ILP:
   - Instruction Level Parallelism
-  - ![](inst.png)
+  - ![](inst.PNG)
 - Pleasingly Parallel
   - Anzahl Kerne perfekt oder Parallelisierungsgrad hoch genug 
 
@@ -112,7 +112,7 @@ their speed will be some small multiple of the speed of the CPU.
 
 ## Architectures
 - Von Neumann
-  - ![](neumann.png)
+  - ![](neumann.PNG)
   - CPU
     - Registers, very fast
     - Control Unit
@@ -123,9 +123,9 @@ their speed will be some small multiple of the speed of the CPU.
     - Memory <--> CPU Data and Instruction Transmission
 
 ## Parallelism
-![](./para.png)
-![](./para2.png)
-![](./para3.png)
+![](./para.PNG)
+![](./para2.PNG)
+![](./para3.PNG)
 ## SIMD
 - Single CPU exclusively for control
 - Large collection of ALUs with own small memory
@@ -147,12 +147,12 @@ their speed will be some small multiple of the speed of the CPU.
 - Asynchronous
 - Shared memory system MIMD = multiprocessors
 - Distributed memory system MIMD = multicomputer
-![](./mimd1.png)
-![](./mimd2.png)
-![](dist.png)
+![](./mimd1.PNG)
+![](./mimd2.PNG)
+![](dist.PNG)
 
 ## Dynamic Interconnection Networks
-![](dyn.png)
+![](dyn.PNG)
 - Examples
   - 
 
@@ -171,10 +171,10 @@ their speed will be some small multiple of the speed of the CPU.
     - 2 Nodes can communicate for sure but may already be blocking all others
 
 ## Communication and Routing
-![](comrout.png)
+![](comrout.PNG)
 
 ## Shared Memory Programming
-![](shared.png)
+![](shared.PNG)
 - Semaphores
   - binary
 - Atomic Operations
@@ -186,5 +186,5 @@ their speed will be some small multiple of the speed of the CPU.
   - is a function called all ohters can't call that function
   - prevents inconsistency
 - Message Passing
-  - ![](msg.png) 
+  - ![](msg.PNG) 
 
